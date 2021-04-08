@@ -1,0 +1,16 @@
+title: DT64Rundfunk Bregenz - Kanal 1
+description: 'Filme , Dokus , etc'
+template:
+  repo: dt64rundfunk-bregenz-kanal-1-template
+  name: dt64rundfunk-bregenz-kanal-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
